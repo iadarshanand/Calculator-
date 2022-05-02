@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+body {
+  /* background: #bc48ff;
+  background: -webkit-radial-gradient(circle, #bc48ff 0%, #dadaeb 100%);
+  background: radial-gradient(circle, #bc48ff 0%, #dadaeb 100%); */
+  /* background: rgb(242, 63, 130);
+  background: radial-gradient(
+    circle,
+    rgba(242, 63, 130, 1) 5%,
+    rgba(233, 246, 246, 1) 32%
+  ); */
+  /* background: #ee89e5;
+  background: -webkit-radial-gradient(circle, #b560e6 0%, #fefeff 100%);
+  background: radial-gradient(circle, #bc48ff 0%, #dadaeb 100%); */
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  width: 98vw;
+  height: 102vh;
+  object-fit: cover;
+}
+.hero {
+  width: 24vw;
+  height: 42vw;
+
+  border: 1px solid black;
+  /* border-radius: 76px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  /* 
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.btn {
+  width: 4vw;
+  height: 4vw;
+  /* border-radius: 22px; */
+  /* background: #f7caf1;
+  box-shadow: 6px 6px 14px #886f85, -6px -6px 13px #ffffff; */
+
+  border-radius: 18px;
+  background: linear-gradient(45deg, #bdadad, #f1dede);
+  box-shadow: 6px -6px 11px #afafaf, -6px 6px 11px #ffffff;
+
+  text-align: center;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
+#colr {
+  color: rgb(20, 157, 243);
+}
+#icn {
+  color: rgb(20, 157, 243);
+}
+
+.btn:hover {
+  animation: effect 0.4s 1;
+}
+
+@keyframes effect {
+  0% {
+    transform: translateZ(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateZ(-12px) rotate(-12deg);
+  }
+
+  40% {
+    transform: translateZ(-6px) rotate(-6deg);
+  }
+
+  60% {
+    transform: translateZ(6px) rotate(6deg);
+  }
+
+  80% {
+    transform: translateZ(12px) rotate(12deg);
+  }
+
+  100% {
+    transform: translateZ(0px) rotate(0deg);
+  }
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+/* Input */
+.inpt {
+  width: 90%;
+  height: 25%;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 254);
+}
+#inp1 {
+  width: 80%;
+  height: 60%;
+  border: 0px solid red;
+
+  text-align: right;
+  font-size: 3rem;
+  color: blueviolet;
+  /* This below code make read only input */
+  pointer-events: none;
+  /* border: 0px solid; */
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+#inp2 {
+  width: 80%;
+  height: 35%;
+  border: 0px solid red;
+
+  text-align: right;
+  font-size: 2rem;
+  color: gray;
+  /* border: 0px solid; */
+}
+.keypad {
+  width: 95%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
